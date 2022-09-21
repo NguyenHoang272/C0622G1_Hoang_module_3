@@ -7,34 +7,46 @@ select * from khach_hang where (timestampdiff(year,ngay_sinh,curdate()) between 
 SELECT  khach_hang.ma_khach_hang, khach_hang.ho_ten,COUNT(hop_dong.ma_khach_hang) as so_lan_dat_phong FROM khach_hang
 INNER JOIN hop_dong ON khach_hang.ma_khach_hang = hop_dong.ma_khach_hang
 INNER JOIN loai_khach ON khach_hang.ma_loai_khach = loai_khach.ma_loai_khach
-WHERE (loai_khach.ten_loai_khach="Diamond") GROUP BY hop_dong.ma_khach_hang ORDER BY so_lan_dat_phong ;
+WHERE (loai_khach.ten_loai_khach="Diamond") 
+GROUP BY hop_dong.ma_khach_hang 
+ORDER BY so_lan_dat_phong ;
 -- task5
-SELECT khach_hang.ma_khach_hang,khach_hang.ho_ten,loai_khach.ten_loai_khach, hop_dong.ma_hop_dong, dich_vu.ten_dich_vu, hop_dong.ngay_lam_hop_dong,hop_dong.ngay_ket_thuc, (ifnull(dich_vu.chi_phi_thue,0)+ ifnull(hop_dong_chi_tiet.so_luong,0)*ifnull(dich_vu_di_kem.gia,0)) as tong_tien
+SELECT khach_hang.ma_khach_hang,khach_hang.ho_ten,loai_khach.ten_loai_khach, hop_dong.ma_hop_dong,
+ dich_vu.ten_dich_vu, hop_dong.ngay_lam_hop_dong,hop_dong.ngay_ket_thuc,
+(ifnull(dich_vu.chi_phi_thue,0)+ SUM(ifnull(hop_dong_chi_tiet.so_luong,0)*ifnull(dich_vu_di_kem.gia,0))) as tong_tien
 FROM khach_hang
 JOIN loai_khach ON khach_hang.ma_loai_khach = loai_khach.ma_loai_khach
 LEFT JOIN hop_dong ON khach_hang.ma_khach_hang = hop_dong.ma_khach_hang
 LEFT JOIN dich_vu ON hop_dong.ma_dich_vu = dich_vu.ma_dich_vu
 LEFT JOIN hop_dong_chi_tiet ON hop_dong.ma_hop_dong = hop_dong_chi_tiet.ma_hop_dong
 LEFT JOIN dich_vu_di_kem ON dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
-GROUP BY hop_dong.ma_hop_dong
+GROUP BY hop_dong.ma_hop_dong,khach_hang.ma_khach_hang
 ORDER BY khach_hang.ma_khach_hang;
 
--- task6
+-- task6: 6.	Hiển thị ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu của tất cả các 
+-- loại dịch vụ chưa từng được khách hàng thực hiện đặt từ quý 1 của năm 2021 (Quý 1 là tháng 1, 2, 3).
 SELECT dich_vu.ma_dich_vu, dich_vu.ten_dich_vu,dich_vu.dien_tich,dich_vu.chi_phi_thue, loai_dich_vu.ten_loai_dich_vu FROM
 dich_vu
 INNER JOIN loai_dich_vu ON dich_vu.ma_loai_dich_vu = loai_dich_vu.ma_loai_dich_vu
 WHERE dich_vu.ma_dich_vu NOT IN (
 SELECT hop_dong.ma_dich_vu FROM hop_dong
 WHERE hop_dong.ngay_lam_hop_dong BETWEEN '2021-01-01' AND '2021-03-31');
--- task7
-SELECT dich_vu.ma_dich_vu, dich_vu.ten_dich_vu,dich_vu.dien_tich,dich_vu.so_nguoi_toi_da, dich_vu.chi_phi_thue, loai_dich_vu.ten_loai_dich_vu FROM
-dich_vu
+
+-- task7: 7.	Hiển thị thông tin ma_dich_vu, ten_dich_vu, dien_tich, so_nguoi_toi_da, chi_phi_thue, ten_loai_dich_vu 
+-- của tất cả các loại dịch vụ đã từng được khách hàng đặt phòng 
+-- trong năm 2020 nhưng chưa từng được khách hàng đặt phòng trong năm 2021.
+
+SELECT dich_vu.ma_dich_vu, dich_vu.ten_dich_vu,dich_vu.dien_tich,
+dich_vu.so_nguoi_toi_da, dich_vu.chi_phi_thue, loai_dich_vu.ten_loai_dich_vu 
+FROM dich_vu
 JOIN loai_dich_vu ON dich_vu.ma_loai_dich_vu = loai_dich_vu.ma_loai_dich_vu
 WHERE dich_vu.ma_dich_vu IN (
 SELECT hop_dong.ma_dich_vu FROM hop_dong
 WHERE hop_dong.ngay_lam_hop_dong BETWEEN'2020-01-00' AND '2020-12-31') AND dich_vu.ma_dich_vu NOT IN (
 SELECT hop_dong.ma_dich_vu FROM hop_dong
 WHERE hop_dong.ngay_lam_hop_dong > '2020-12-31');
+
+
 -- task8
 SELECT ho_ten FROM khach_hang
 GROUP BY ho_ten;
@@ -48,13 +60,15 @@ WHERE year(ngay_lam_hop_dong) = 2021
 GROUP BY thang
 ORDER BY thang;
 -- task 10
-SELECT hop_dong.ma_hop_dong, hop_dong.ngay_lam_hop_dong,hop_dong.ngay_ket_thuc, hop_dong.tien_dat_coc, SUM(ifnull(hop_dong_chi_tiet.so_luong,0))
+SELECT hop_dong.ma_hop_dong, hop_dong.ngay_lam_hop_dong,hop_dong.ngay_ket_thuc, hop_dong.tien_dat_coc, 
+SUM(ifnull(hop_dong_chi_tiet.so_luong,0))
 FROM hop_dong
 LEFT JOIN hop_dong_chi_tiet ON hop_dong.ma_hop_dong = hop_dong_chi_tiet.ma_hop_dong
 GROUP BY hop_dong.ma_hop_dong;
 
 -- task 11
-SELECT dich_vu_di_kem.ma_dich_vu_di_kem, dich_vu_di_kem.ten_dich_vu_di_kem FROM dich_vu_di_kem
+SELECT dich_vu_di_kem.ma_dich_vu_di_kem, dich_vu_di_kem.ten_dich_vu_di_kem 
+FROM dich_vu_di_kem
 JOIN hop_dong_chi_tiet ON hop_dong_chi_tiet.ma_dich_vu_di_kem = dich_vu_di_kem.ma_dich_vu_di_kem
 JOIN hop_dong ON hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
 JOIN khach_hang ON khach_hang.ma_khach_hang = hop_dong.ma_khach_hang
@@ -75,7 +89,8 @@ GROUP BY hop_dong.ma_hop_dong;
 
 -- task 13
 CREATE VIEW demo AS
-SELECT dich_vu_di_kem.ma_dich_vu_di_kem as ma_dich_vu_di_kem, dich_vu_di_kem.ten_dich_vu_di_kem as ten_dich_vu_di_kem, SUM(ifnull(hop_dong_chi_tiet.so_luong,0)) as so_luong_dich_vu_di_kem  FROM dich_vu_di_kem
+SELECT dich_vu_di_kem.ma_dich_vu_di_kem as ma_dich_vu_di_kem, dich_vu_di_kem.ten_dich_vu_di_kem 
+as ten_dich_vu_di_kem, SUM(ifnull(hop_dong_chi_tiet.so_luong,0)) as so_luong_dich_vu_di_kem  FROM dich_vu_di_kem
 JOIN hop_dong_chi_tiet ON hop_dong_chi_tiet.ma_dich_vu_di_kem = dich_vu_di_kem.ma_dich_vu_di_kem
 GROUP BY hop_dong_chi_tiet.ma_dich_vu_di_kem;
 
@@ -107,7 +122,19 @@ WHERE YEAR(hop_dong.ngay_lam_hop_dong) BETWEEN "2020" AND "2021"
 GROUP BY nhan_vien.ma_nhan_vien
 HAVING COUNT(hop_dong.ma_hop_dong) < 4;
 
--- Task 16
+-- task 16:	Xóa những Nhân viên chưa từng lập được hợp đồng nào từ năm 2019 đến năm 2021.
+SET SQL_SAFE_UPDATES = 0;
+delete
+from nhan_vien
+where nhan_vien.ma_nhan_vien not in(
+select nv_chua_tao_hd.nv_mnv from(
+select 
+	nhan_vien.ma_nhan_vien as nv_mnv
+from nhan_vien join hop_dong on nhan_vien.ma_nhan_vien = hop_dong.ma_nhan_vien
+where hop_dong.ngay_lam_hop_dong between '2019-01-01' and '2021-12-31'   
+group by nhan_vien.ma_nhan_vien) as nv_chua_tao_hd);
+
+select nhan_vien.ma_nhan_vien from nhan_vien;
 
 -- Task 17
 DROP VIEW IF EXISTS demo2;
@@ -115,7 +142,7 @@ CREATE VIEW demo2 AS
 SELECT khach_hang.ma_khach_hang,
 khach_hang.ho_ten,
 loai_khach.ten_loai_khach,
-hop_dong.ma_hop_dong, c 
+hop_dong.ma_hop_dong, 
 dich_vu.ten_dich_vu,
 hop_dong.ngay_lam_hop_dong,
 hop_dong.ngay_ket_thuc,

@@ -1,0 +1,74 @@
+
+#text1{
+    color: #f05a00;
+    font-size: 30px;
+    width: 825px;
+    height: 168px;
+
+}
+
+nav{
+    position:absolute;
+    display: block;
+    background-color: #f78802;
+    left: 20%;
+    top: 104px;
+    height: 72px;
+    width: 860px;
+}
+.menu{
+    display: inline-block;
+    padding-left: 16px;
+    padding-right: 35px;
+}
+a.menu, a.doan1{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    line-height: 72px;
+}
+.menu:hover {background-color: #f05a00;}
+.tong{
+    column-count: 2;
+}
+.col-25{
+    width:30%;
+    margin-left: 30px;
+
+}
+
+.col-75{
+    width:70%;
+    padding-top: 5px;
+    margin-left: 60px;
+}
+
+div.phuluc1{
+    border:4px solid #FF9933 ;
+    margin-top: 15px;
+    background-height: 168px;
+    background-color:#FF9933;
+    padding-top:20px;
+    padding-bottom:10px;
+    font-size: 15px;
+    text-align: center;
+    color:#FFF;
+
+}
+div.phuluc2{
+    font-size: 15px;
+    font-color:#FFFFFF;
+    background-width: 825px;
+    background-height: 168px;
+    background-color:#FF9933;
+    padding-top:5px;
+    padding-right:150px;
+    padding-bottom:30px;
+    padding-left:50px;
+    text-indent:270px;
+    line-height:10px;
+    color:white;
+}
+.phuluctong{
+    margin-top: 40px;
+}
