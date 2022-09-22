@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana,sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: 10px;
     background: slategray;
 }
@@ -36,9 +36,12 @@ nav ul li {
     padding: 15px;
     background: yellowgreen;
 }
-li:hover {background-color: #f05a00;}
 
-.col-tong{
+li:hover {
+    background-color: #f05a00;
+}
+
+.col-tong {
     background: darkgray;
     height: 900px;
     margin-left: 80px;
@@ -58,13 +61,15 @@ li:hover {background-color: #f05a00;}
     font-size: 13px;
     margin-top: 15px;
 }
-footer{
+
+footer {
     height: 100px;
 }
-.phuluctong{
+
+.phuluctong {
     margin-bottom: 20px;
 }
 
-.can-trai{
+.can-trai {
     margin-left: 10px;
 }

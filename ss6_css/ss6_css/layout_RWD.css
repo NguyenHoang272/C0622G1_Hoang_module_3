@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana,sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: 10px;
 }
 
@@ -20,7 +20,7 @@ footer {
 
 
 nav ul {
-    background: yellowgreen;
+    background: black;
     margin-left: 80px;
     margin-right: 80px;
     padding: 30px;
@@ -31,15 +31,17 @@ nav ul li {
     margin: 5px;
     font-family: Verdana;
     font-size: 15px;
-    background: yellowgreen;
+    color: white;
+    background: black;
 
 }
-.dang-xuat{
-float: right;
+
+.dang-xuat {
+    float: right;
     margin: 0;
 }
 
-.col-tong{
+.col-tong {
     background: bisque;
     height: 500px;
     margin-left: 80px;
@@ -49,25 +51,27 @@ float: right;
 
 .col-left {
     width: 20%;
-    background: red;
+    background: darkgray;
 }
 
 .col-mid {
     width: 60%;
-    background: green;
+    background: slategray;
 }
 
-.col-right{
+.col-right {
     width: 20%;
-    background: blue;
+    background: darkgray;
 }
-.col-left p{
+
+.col-left p {
     text-align: center;
     margin-top: 30px;
 }
-.col-right p{
+
+.col-right p {
     text-align: center;
     border: 1px solid black;
     padding: 20px;
-    margin:30px ;
+    margin: 30px;
 }
