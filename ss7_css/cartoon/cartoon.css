@@ -41,7 +41,7 @@ li:hover {
     background-color: #f05a00;
 }
 
-.col-tong {
+.col {
     background: darkgray;
     height: 900px;
     margin-left: 80px;
@@ -66,10 +66,10 @@ footer {
     height: 100px;
 }
 
-.phuluctong {
+.footer {
     margin-bottom: 20px;
 }
 
-.can-trai {
+.col-left-1 {
     margin-left: 10px;
 }
