@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="33b7e05b-3d5d-4259-b078-f9fcc8722941" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/exercise/.idea/exercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/exercise/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/exercise/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/exercise/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/exercise/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/build/classes/java/main/ServerTimeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/build/libs/practise_1-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/src/main/java/ServerTimeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/practise_1/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/build/classes/java/main/ProductDiscountServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/build/libs/product_discount-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/src/main/java/ProductDiscountServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_tong_quan_web/practise/product_discount/src/main/webapp/result.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2FQovjGe8bKyGz8jD78LpeIO03z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33b7e05b-3d5d-4259-b078-f9fcc8722941" name="Default Changelist" comment="" />
+      <created>1664433900639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664433900639</updated>
+      <workItem from="1664433902076" duration="42000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1664433947191">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1664433947191" />
+    <state x="91" y="0" key="new project wizard" timestamp="1664433949392">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1664433949392" />
+  </component>
+</project>
