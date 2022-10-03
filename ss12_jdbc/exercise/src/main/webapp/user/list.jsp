@@ -21,6 +21,8 @@
     <h1>User Management</h1>
     <h2>
         <a href="/users?action=create">Add New User</a>
+        <a href="/users?action=find">Find User</a>
+        <a href="/users?action=sort">Sắp xếp</a>
     </h2>
     <caption><h2>List of Users</h2></caption>
     </div>
