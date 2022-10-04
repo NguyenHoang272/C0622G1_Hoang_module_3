@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf91d507-1b7f-4a3b-bae8-5663adf49ed1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../product_management_list/src/main/java/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product_management_list/src/main/java/repository/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise/src/main/java/dao/IUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise/src/main/java/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/build/classes/java/main/controller/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/build/classes/java/main/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/build/classes/java/main/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/build/classes/java/main/service/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/build/libs/exercise_1-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/java/controller/ProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/java/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/java/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/java/service/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/webapp/erorr-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/webapp/product/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/webapp/product/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/webapp/product/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/webapp/product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvp/exercise/src/main/webapp/product/view.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2FWjury9VR9rkfcJYRYNe6nLYQ2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/exercise" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf91d507-1b7f-4a3b-bae8-5663adf49ed1" name="Default Changelist" comment="" />
+      <created>1664614959867</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664614959867</updated>
+      <workItem from="1664614962467" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1664614969222">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1664614969222" />
+  </component>
+</project>
