@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IRepoCustomer {
    List<Customer> getListCustomer();
+   void addCustomer(Customer newCustomer);
 }

@@ -16,104 +16,188 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
     <style>
-        header{
-            width: 100%;
-        }
-        header .left-header img{
-            width: 40px;
-            height: 80px;
-            margin: 5px 5px 5px 40px;
-            float: left;
-        }
-        header .right-header h3{
-            float: right;
-        }
-        .menu{
-            clear: left;
-            float: left;
-            width: 100%;
-        }
-        .body-mid .body-mid-left{
-            clear: left;
-            float: left;
-            width: 20%;
-            min-height: 100%;
-        }
-        .body-mid .body-mid-right{
-            float: left;
-            width: 80%;
-        }
-        .body-mid .body-mid-right img{
-            width: 100%;
-        }
-        footer{
-            clear: left;
-            text-align: center;
-            background-color: cadetblue;
+        body {
+            font-family: Verdana, sans-serif;
+            font-size: 10px;
+            background: white;
         }
 
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .menu{
+            font-size: 20px;
+        }
+        header {
+            padding: 20px;
+            color: black;
+            background-color: #007f3f;
+
+        }
+
+        footer{
+            padding: 10px;
+            color: white;
+            background-color: black;
+
+        }
+
+
+        /*nav ul {*/
+        /*    padding: 15px;*/
+        /*    text-align: center;*/
+        /*    background: yellowgreen;*/
+        /*    margin-left: 80px;*/
+        /*    margin-right: 80px;*/
+        /*}*/
+
+        /*nav ul li {*/
+        /*    display: inline;*/
+        /*    margin: 5px;*/
+        /*    font-family: Verdana;*/
+        /*    font-size: 15px;*/
+        /*    padding: 15px;*/
+        /*    background: yellowgreen;*/
+        /*}*/
+
+        /*li:hover {*/
+        /*    background-color: #f05a00;*/
+        /*}*/
+
+        .col {
+            /*margin-top: 15px;*/
+            background: #d0dbd5;
+            height: 1200px;
+
+        }
+
+        .col-left {
+            background: #d0dbd5 ;
+            width: 30%;
+            float: left;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .col-right {
+            background: #d0dbd5;
+            width: 70%;
+            height: 1185px;
+            float: left;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        footer {
+            height: 100px;
+        }
+
+        .footer {
+            margin-bottom: 20px;
+        }
+
+        .col-left-1 {
+            margin-top: 5px;
+            height: 1185px;
+            margin-left: 15px;
+        }
     </style>
 </head>
 <body>
 <header>
-    <div class="left-header">
-        <img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo@2x.png">
-    </div>
-    <div class="right-header">
-        <h3>Nguyễn Văn Hùng</h3>
-    </div>
+    <a><img src="https://static.topcv.vn/company_logos/oruz4IPeY3cyRu9HaWwRFrSdfWfDnw60_1635916800____08c8e444e64ab28b2cef44fb69347361.png"
+            style="height: 100px; width: 150px"></a>
+    <h3 style="float: right; margin-top: 50px">Nguyễn Mậu Hoàng</h3>
 </header>
 <div class="menu">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: #00592b">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/home">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/employees">Employees</a>
+                        <a class="nav-link active" aria-current="page" href="/employees">Employee</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/customer">Customer</a>
+                        <a class="nav-link active" href="/customer">Customer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/facility">Service</a>
+                        <a class="nav-link active" href="/facility">Service</a>
+                    </li>
+                    <!--                <li class="nav-item dropdown">-->
+                    <!--                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+                    <!--                        Facility-->
+                    <!--                    </a>-->
+                    <!--&lt;!&ndash;                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        <li><a class="dropdown-item" href="#">Villa</a></li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        <li><a class="dropdown-item" href="#">House</a></li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        <li><hr class="dropdown-divider"></li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        <li><a class="dropdown-item" href="#">Room</a></li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+                    <!--                </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="booking.jsp" >Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="booking.jsp">Booking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contract.jsp">Contract</a>
+                        <a class="nav-link active" href="contract.jsp">Contract</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" name="search">Search</button>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 </div>
-<div class="body-mid">
-    <div class="body-mid-left">
-        <ul class="list-group">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-            <li class="list-group-item">And a fifth one</li>
-        </ul>
+
+<div class="col">
+    <div class="col-left">
+        <div class="col-left-1">
+            <h5 style="margin-left: 90px">Giới thiệu</h5>
+            <div class="card" style="width: 18rem;">
+                <img src="Review-Furama-Resort-Da-Nang-13.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="card" style="width: 18rem;">
+                <img src="Review-Furama-Resort-Da-Nang-13.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="card" style="width: 18rem;">
+                <img src="Review-Furama-Resort-Da-Nang-13.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="body-mid-right">
-        <img src="https://exclusivesmedia.webjet.com.au/uploads/2015/05/Furama6.jpg">
+
+    <div class="col-right">
+        <center><h5>Trải Nghiệm Furama</h5></center>
+        <iframe width="860" height="415" src="https://www.youtube.com/embed/mPM5VsVQ3hw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br><br><br>
+        <center><h5>Đà Nẵng 2022 - Furama Villas Resort</h5></center>
+        <iframe width="860" height="415" src="https://www.youtube.com/embed/IOOcj2DKd9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
+
 <footer>
-    <p>Nguyễn Văn Hùng</p>
+    <p class="footer">
+    <p class="footer-1"> Tel.: 84-236-3847 333/888 * Fax: 84-236-3847 666</p><br>
+    <p class="footer-2"> 103 - 105 Vo Nguyen Giap Street, Khue My Ward, Ngu Hanh Son District, Danang City, Vietnam</p>
+    </div>
 </footer>
 </body>
 </html>

@@ -14,4 +14,10 @@ public class CustomerService implements ICustomerService {
     public List<Customer> getListCustomer() {
         return repoCustomer.getListCustomer();
     }
+
+    @Override
+    public void addCustomer(Customer newCustomer) {
+        repoCustomer.addCustomer(newCustomer);
+    }
+
 }
