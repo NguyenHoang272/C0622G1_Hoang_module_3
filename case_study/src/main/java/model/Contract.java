@@ -1,10 +1,10 @@
 package model;
 
 public class Contract {
-    String contractID;
-    String bookingCode;
-    double moneyFirst;
-    double totalMoney;
+    private String contractID;
+    private String bookingCode;
+    private double moneyFirst;
+    private double totalMoney;
     String customerCode;
 
     public Contract() {

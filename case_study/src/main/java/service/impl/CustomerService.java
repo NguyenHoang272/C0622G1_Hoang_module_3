@@ -8,7 +8,7 @@ import service.ICustomerService;
 import java.util.List;
 
 public class CustomerService implements ICustomerService {
-    IRepoCustomer repoCustomer = new RepoCustomer();
+    private IRepoCustomer repoCustomer = new RepoCustomer();
 
     @Override
     public List<Customer> getListCustomer() {

@@ -8,7 +8,7 @@ import service.IEmployeeService;
 import java.util.List;
 
 public class EmployeeService implements IEmployeeService {
-    IRepoEmployees repoEmployees = new RepoEmployees();
+    private IRepoEmployees repoEmployees = new RepoEmployees();
     @Override
     public List<Employee> getListEmployees() {
         return repoEmployees.getListEmployees();

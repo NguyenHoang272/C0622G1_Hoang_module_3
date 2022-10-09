@@ -28,17 +28,17 @@ public class RepoEmployees implements IRepoEmployees {
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
-                String date_of_birth = rs.getString("date_of_birth");
-                String id_card = rs.getString("id_card");
+                String dateOfBirth = rs.getString("date_of_birth");
+                String idCard = rs.getString("id_card");
                 double salary = rs.getDouble("salary");
-                String phone_number = rs.getString("phone_number");
+                String phoneNumber = rs.getString("phone_number");
                 String email = rs.getString("email");
                 String address = rs.getString("address");
-                int position_id = rs.getInt("position_id");
-                int education_degree_id = rs.getInt("education_degree_id");
-                int division_id = rs.getInt("division_id");
+                int positionId = rs.getInt("position_id");
+                int educationDegreeId = rs.getInt("education_degree_id");
+                int divisionId = rs.getInt("division_id");
                 String username = rs.getString("username");
-                employeeList.add(new Employee(id, name, date_of_birth, id_card, salary, phone_number, email, address, position_id, education_degree_id, division_id, username));
+                employeeList.add(new Employee(id, name, dateOfBirth, idCard, salary, phoneNumber, email, address, positionId, educationDegreeId, divisionId, username));
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -81,17 +81,17 @@ public class RepoEmployees implements IRepoEmployees {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 String name = rs.getString("name");
-                String date_of_birth = rs.getString("date_of_birth");
-                String id_card = rs.getString("id_card");
+                String dateOfBirth = rs.getString("date_of_birth");
+                String idCard = rs.getString("id_card");
                 double salary = rs.getDouble("salary");
-                String phone_number = rs.getString("phone_number");
+                String phoneNumber = rs.getString("phone_number");
                 String email = rs.getString("email");
                 String address = rs.getString("address");
-                int position_id = rs.getInt("position_id");
-                int education_degree_id = rs.getInt("education_degree_id");
-                int division_id = rs.getInt("division_id");
+                int positionId = rs.getInt("position_id");
+                int educationDegreeId = rs.getInt("education_degree_id");
+                int divisionId = rs.getInt("division_id");
                 String username = rs.getString("username");
-                employee = new Employee(id, name, date_of_birth, id_card, salary, phone_number, email, address, position_id, education_degree_id, division_id, username);
+                employee = new Employee(id, name, dateOfBirth, idCard, salary, phoneNumber, email, address, positionId, educationDegreeId, divisionId, username);
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();

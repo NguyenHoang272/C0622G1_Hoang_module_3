@@ -18,7 +18,7 @@ import java.util.List;
 
 @WebServlet(name = "EmployeesServlet", urlPatterns = "/employees")
 public class EmployeesServlet extends HttpServlet {
-    IEmployeeService employeeService = new EmployeeService();
+    private IEmployeeService employeeService = new EmployeeService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
