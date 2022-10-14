@@ -1,0 +1,35 @@
+header{
+    width: 100%;
+}
+header .left-header img{
+    width: 40px;
+    height: 80px;
+    margin: 5px 5px 5px 40px;
+    float: left;
+}
+header .right-header h3{
+    float: right;
+}
+.menu{
+    clear: left;
+    float: left;
+    width: 100%;
+}
+.body-mid .body-mid-left{
+    clear: left;
+    float: left;
+    width: 20%;
+    min-height: 100%;
+}
+.body-mid .body-mid-right{
+    float: left;
+    width: 80%;
+}
+.body-mid .body-mid-right img{
+    width: 100%;
+}
+footer{
+    clear: left;
+    text-align: center;
+    background-color: cadetblue;
+}

@@ -4,13 +4,10 @@ import model.Product;
 import repository.IProductRepository;
 import repository.ProductRepositoryImpl;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class ProductServiceImpl implements ProductService {
-    private IProductRepository iProductRepository= new ProductRepositoryImpl();
+    private IProductRepository iProductRepository= (IProductRepository) new ProductRepositoryImpl();
 
     @Override
     public List<Product> findAll() {
