@@ -88,11 +88,18 @@ WHERE hop_dong.ngay_lam_hop_dong BETWEEN '2021-01-01' AND '2021-06-31')
 GROUP BY hop_dong.ma_hop_dong;
 
 -- task 13
-CREATE VIEW demo AS
-SELECT dich_vu_di_kem.ma_dich_vu_di_kem as ma_dich_vu_di_kem, dich_vu_di_kem.ten_dich_vu_di_kem 
-as ten_dich_vu_di_kem, SUM(ifnull(hop_dong_chi_tiet.so_luong,0)) as so_luong_dich_vu_di_kem  FROM dich_vu_di_kem
-JOIN hop_dong_chi_tiet ON hop_dong_chi_tiet.ma_dich_vu_di_kem = dich_vu_di_kem.ma_dich_vu_di_kem
-GROUP BY hop_dong_chi_tiet.ma_dich_vu_di_kem;
+SELECT dvdk.ma_dich_vu_di_kem,
+       dvdk.ten_dich_vu_di_kem,
+       sum(hdct.so_luong) so_lan_su_dung
+FROM dich_vu_di_kem dvdk
+INNER JOIN hop_dong_chi_tiet hdct ON dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem
+GROUP BY dvdk.ma_dich_vu_di_kem
+HAVING so_lan_su_dung >= ALL
+  (SELECT sum(hdct.so_luong) so_lan_su_dung
+   FROM dich_vu_di_kem dvdk
+   INNER JOIN hop_dong_chi_tiet hdct ON dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem
+   GROUP BY dvdk.ma_dich_vu_di_kem);
+
 
 -- task 14
 SELECT hop_dong.ma_hop_dong,
@@ -166,17 +173,132 @@ SELECT * FROM khach_hang;
 SET FOREIGN_KEY_CHECKS=0;
 DELETE FROM khach_hang
 WHERE khach_hang.ma_khach_hang IN (SELECT hop_dong.ma_khach_hang FROM hop_dong WHERE (YEAR(hop_dong.ngay_lam_hop_dong) < 2021 ));
--- Task 19
-DROP VIEW IF EXISTS demo3;
-CREATE VIEW demo3 AS
-SELECT hop_dong_chi_tiet.ma_dich_vu_di_kem, SUM(hop_dong_chi_tiet.so_luong) as so_luong FROM hop_dong_chi_tiet
-JOIN hop_dong ON hop_dong.ma_hop_dong = hop_dong_chi_tiet.ma_hop_dong
-WHERE hop_dong.ma_hop_dong NOT IN (SELECT hop_dong.ma_hop_dong FROM hop_dong
-WHERE year(hop_dong.ngay_lam_hop_dong)>=2021)
-GROUP BY hop_dong_chi_tiet.ma_dich_vu_di_kem;
 UPDATE dich_vu_di_kem
-JOIN demo3 ON view3.ma_dich_vu_di_kem = dich_vu_di_kem.ma_dich_vu_di_kem SET dich_vu_di_kem.gia = dich_vu_di_kem.gia*2 WHERE demo3.so_luong > 10;
+SET gia = gia*2
+WHERE ma_dich_vu_di_kem in
+    (SELECT*
+     FROM
+       (SELECT dvdk.ma_dich_vu_di_kem
+        FROM hop_dong hd
+        JOIN hop_dong_chi_tiet hdct ON hd.ma_hop_dong = hdct.ma_hop_dong
+        JOIN dich_vu_di_kem dvdk ON hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
+        WHERE year(hd.ngay_lam_hop_dong) = 2020
+        GROUP BY hdct.ma_dich_vu_di_kem
+        HAVING sum(hdct.so_luong) > 10) AS minchou) ; 
 -- Task 20
 SELECT nhan_vien.ma_nhan_vien,nhan_vien.ho_ten,nhan_vien.email,nhan_vien.so_dien_thoai,nhan_vien.ngay_sinh,nhan_vien.dia_chi FROM nhan_vien
 UNION ALL
 SELECT khach_hang.ma_khach_hang,khach_hang.ho_ten,khach_hang.email,khach_hang.so_dien_thoai,khach_hang.ngay_sinh,khach_hang.dia_chi FROM khach_hang;
+
+-- task 21 Tạo khung nhìn có tên là v_nhan_vien để lấy được 
+-- thông tin của tất cả các nhân viên có địa chỉ là “Hải Châu” 
+-- và đã từng lập hợp đồng cho một hoặc nhiều khách hàng bất kì
+-- với ngày lập hợp đồng là “12/12/2019”.
+
+
+
+CREATE VIEW v_nhan_vien AS
+SELECT nv.*
+FROM nhan_vien nv
+JOIN hop_dong hd ON nv.ma_nhan_vien = hd.ma_nhan_vien
+WHERE hd.ngay_lam_hop_dong like '%2019-12-12%'
+  AND dia_chi like '%Hải Châu%';
+
+
+select* from nhan_vien;
+select* from hop_dong;
+-- task 22 Thông qua khung nhìn v_nhan_vien thực hiện cập nhật địa chỉ thành “Liên Chiểu” 
+-- đối với tất cả các nhân viên được nhìn thấy bởi khung nhìn này.
+
+SET SQL_SAFE_UPDATES = 0;
+
+
+UPDATE v_nhan_vien
+SET dia_chi = 'Liên Chiểu';
+
+-- task 23 Tạo Stored Procedure sp_xoa_khach_hang dùng để 
+-- xóa thông tin của một khách hàng nào đó 
+-- với ma_khach_hang được truyền vào như là 1 tham số của sp_xoa_khach_hang.
+
+DELIMITER //
+CREATE PROCEDURE sp_xoa_khach_hang(in ma_khach_hang int) BEGIN
+SET SQL_SAFE_UPDATES = 0;
+DELETE
+FROM khach_hang kh
+WHERE kh.ma_khach_hang = ma_khach_hang ; END //
+DELIMITER ;
+
+CALL sp_xoa_khach_hang(1);
+SELECT*
+FROM khach_hang;
+
+
+
+--  task 24 Tạo Stored Procedure sp_them_moi_hop_dong dùng để 
+-- thêm mới vào bảng hop_dong với yêu cầu sp_them_moi_hop_dong phải thực hiện 
+-- kiểm tra tính hợp lệ của dữ liệu bổ sung, với nguyên tắc không được trùng khóa chính 
+-- và đảm bảo toàn vẹn tham chiếu đến các bảng liên quan. 
+
+DELIMITER //
+CREATE PROCEDURE sp_them_moi_hop_dong(ma_hop_dong int, ngay_lam_hop_dong datetime, ngay_ket_thuc datetime, tien_dat_coc DOUBLE, ma_nhan_vien int , ma_khach_hang int, ma_dich_vu int) BEGIN
+SET SQL_SAFE_UPDATES = 0; IF EXISTS
+  (SELECT hd.ma_hop_dong
+   FROM hop_dong hd
+   WHERE hd.ma_hop_dong = ma_hop_dong) THEN
+SELECT 'mã hợp đồng bị trùng' AS message; elseif NOT EXISTS
+  (SELECT hd.ma_nhan_vien
+   FROM hop_dong hd
+   WHERE hd.ma_nhan_vien = ma_nhan_vien) THEN
+SELECT 'mã nhân viên không tồn tại' AS message; elseif NOT EXISTS
+  (SELECT hd.ma_khach_hang
+   FROM hop_dong hd
+   WHERE hd.ma_khach_hang = ma_khach_hang) THEN
+SELECT 'mã khách hàng không tồn tại' AS message; elseif NOT EXISTS
+  (SELECT hd.ma_dich_vu
+   FROM hop_dong hd
+   WHERE hd.ma_dich_vu = ma_dich_vu) THEN
+SELECT 'mã dịch vụ không tồn tại' AS message; ELSE
+INSERT INTO hop_dong
+VALUES (ma_hop_dong,
+        ngay_lam_hop_dong,
+        ngay_ket_thuc,
+        tien_dat_coc,
+        ma_nhan_vien,
+        ma_khach_hang,
+        ma_dich_vu) ; END IF; END //
+DELIMITER ;
+
+CALL sp_them_moi_hop_dong(14, '2020-12-08', '2020-12-08', 0, 14, 1, 3);
+
+
+
+-- task 25 Tạo Trigger có tên tr_xoa_hop_dong khi 
+-- xóa bản ghi trong bảng hop_dong thì hiển thị tổng số lượng bản ghi còn lại 
+-- có trong bảng hop_dong ra giao diện console của database.
+-- Lưu ý: Đối với MySQL thì sử dụng SIGNAL hoặc ghi log thay cho việc ghi ở console.
+
+DROP TRIGGER tr_xoa_hop_dong;
+
+DELIMITER //
+CREATE TRIGGER tr_xoa_hop_dong AFTER
+DELETE ON hop_dong
+FOR EACH ROW BEGIN
+INSERT INTO hop_dong_log (content, created_date)
+SELECT count(*),
+       sysdate()
+FROM hop_dong; END //
+DELIMITER ;
+
+
+CREATE TABLE hop_dong_log (content varchar (50),
+                                   created_date datetime);
+
+
+DELETE
+FROM hop_dong
+WHERE ma_hop_dong = 2;
+
+SELECT*
+FROM hop_dong_log;
+
+
