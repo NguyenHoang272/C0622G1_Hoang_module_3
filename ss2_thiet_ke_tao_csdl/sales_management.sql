@@ -47,12 +47,16 @@ INSERT INTO `sales_management`.`order_detail` (`o_id`, `p_id`, `od_qty`) VALUES 
 INSERT INTO `sales_management`.`order_detail` (`o_id`, `p_id`, `od_qty`) VALUES (2, 3, 3);
 
 select o_id, o_date, o_total_price from `order`;
+
+-- Hiển thị danh sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua bởi các khách
 SELECT customer.c_name, product.p_name
 FROM customer
 INNER JOIN `order` ON customer.c_id = `order`.c_id
 INNER JOIN order_detail ON `order`.o_id= order_detail.o_id
 INNER JOIN product ON order_detail.p_id = product.p_id;
+
 SELECT * FROM customer WHERE customer.c_id not in (SELECT c_id FROM `order`);
+
 SELECT `order`.o_id,`order`.o_date,SUM(order_detail.od_qty*product.p_price) as total_order_price
 FROM `order`
 INNER JOIN order_detail ON `order`.o_id = order_detail.o_id

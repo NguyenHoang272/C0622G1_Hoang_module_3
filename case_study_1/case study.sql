@@ -2,7 +2,8 @@ use furama_management;
 -- task 2
 select ho_ten from nhan_vien where( ho_ten regexp '^[HTK]') and (char_length(ho_ten) <= 15);
 -- task 3
-select * from khach_hang where (timestampdiff(year,ngay_sinh,curdate()) between 18 and 50) and (dia_chi like '%Đà Nẵng%' or dia_chi like '%Quảng Trị%');
+select * from khach_hang where (timestampdiff(year,ngay_sinh,curdate()) between 18 and 50) 
+and (dia_chi like '%Đà Nẵng%' or dia_chi like '%Quảng Trị%');
 -- task4
 SELECT  khach_hang.ma_khach_hang, khach_hang.ho_ten,COUNT(hop_dong.ma_khach_hang) as so_lan_dat_phong FROM khach_hang
 INNER JOIN hop_dong ON khach_hang.ma_khach_hang = hop_dong.ma_khach_hang
