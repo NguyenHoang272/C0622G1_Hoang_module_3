@@ -4,14 +4,24 @@ select ho_ten from nhan_vien where( ho_ten regexp '^[HTK]') and (char_length(ho_
 -- task 3
 select * from khach_hang where (timestampdiff(year,ngay_sinh,curdate()) between 18 and 50) 
 and (dia_chi like '%Đà Nẵng%' or dia_chi like '%Quảng Trị%');
+
 -- task4
+--  Đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu lần.--
+--  Kết quả hiển thị được sắp xếp tăng dần theo số lần đặt phòng của khách hàng.
+--  Chỉ đếm những khách hàng nào có Tên loại khách hàng là “Diamond”.
 SELECT  khach_hang.ma_khach_hang, khach_hang.ho_ten,COUNT(hop_dong.ma_khach_hang) as so_lan_dat_phong FROM khach_hang
 INNER JOIN hop_dong ON khach_hang.ma_khach_hang = hop_dong.ma_khach_hang
 INNER JOIN loai_khach ON khach_hang.ma_loai_khach = loai_khach.ma_loai_khach
 WHERE (loai_khach.ten_loai_khach="Diamond") 
 GROUP BY hop_dong.ma_khach_hang 
 ORDER BY so_lan_dat_phong ;
+
 -- task5
+-- Hiển thị ma_khach_hang, ho_ten, ten_loai_khach, ma_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, tong_tien 
+-- (Với tổng tiền được tính theo công thức như sau: 
+-- Chi Phí Thuê + Số Lượng * Giá, với Số Lượng và Giá là từ bảng dich_vu_di_kem, hop_dong_chi_tiet) 
+-- cho tất cả các khách hàng đã từng đặt phòng. 
+-- (những khách hàng nào chưa từng đặt phòng cũng phải hiển thị ra).
 SELECT khach_hang.ma_khach_hang,khach_hang.ho_ten,loai_khach.ten_loai_khach, hop_dong.ma_hop_dong,
  dich_vu.ten_dich_vu, hop_dong.ngay_lam_hop_dong,hop_dong.ngay_ket_thuc,
 (ifnull(dich_vu.chi_phi_thue,0)+ SUM(ifnull(hop_dong_chi_tiet.so_luong,0)*ifnull(dich_vu_di_kem.gia,0))) as tong_tien
@@ -23,6 +33,7 @@ LEFT JOIN hop_dong_chi_tiet ON hop_dong.ma_hop_dong = hop_dong_chi_tiet.ma_hop_d
 LEFT JOIN dich_vu_di_kem ON dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
 GROUP BY hop_dong.ma_hop_dong,khach_hang.ma_khach_hang
 ORDER BY khach_hang.ma_khach_hang;
+
 
 -- task6: 6.	Hiển thị ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu của tất cả các 
 -- loại dịch vụ chưa từng được khách hàng thực hiện đặt từ quý 1 của năm 2021 (Quý 1 là tháng 1, 2, 3).
@@ -43,7 +54,8 @@ FROM dich_vu
 JOIN loai_dich_vu ON dich_vu.ma_loai_dich_vu = loai_dich_vu.ma_loai_dich_vu
 WHERE dich_vu.ma_dich_vu IN (
 SELECT hop_dong.ma_dich_vu FROM hop_dong
-WHERE hop_dong.ngay_lam_hop_dong BETWEEN'2020-01-00' AND '2020-12-31') AND dich_vu.ma_dich_vu NOT IN (
+WHERE hop_dong.ngay_lam_hop_dong BETWEEN'2020-01-00' AND '2020-12-31')
+AND dich_vu.ma_dich_vu NOT IN (
 SELECT hop_dong.ma_dich_vu FROM hop_dong
 WHERE hop_dong.ngay_lam_hop_dong > '2020-12-31');
 
@@ -185,7 +197,7 @@ WHERE ma_dich_vu_di_kem in
         JOIN dich_vu_di_kem dvdk ON hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
         WHERE year(hd.ngay_lam_hop_dong) = 2020
         GROUP BY hdct.ma_dich_vu_di_kem
-        HAVING sum(hdct.so_luong) > 10) AS minchou) ; 
+        HAVING sum(hdct.so_luong) > 10)) ; 
 -- Task 20
 SELECT nhan_vien.ma_nhan_vien,nhan_vien.ho_ten,nhan_vien.email,nhan_vien.so_dien_thoai,nhan_vien.ngay_sinh,nhan_vien.dia_chi FROM nhan_vien
 UNION ALL

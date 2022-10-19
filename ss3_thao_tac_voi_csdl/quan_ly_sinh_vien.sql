@@ -1,75 +1,87 @@
-DROP database if exists QuanLySinhVien;
-CREATE DATABASE QuanLySinhVien;
-USE QuanLySinhVien;
-CREATE TABLE Class
+drop database if exists QuanLySinhVien;
+create database QuanLySinhVien;
+use QuanLySinhVien;
+create table Class
 (
-    ClassID   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    ClassName VARCHAR(60) NOT NULL,
-    StartDate DATETIME    NOT NULL,
-    Status    BIT
+    ClassID   int         not null auto_increment primary key,
+    ClassName varchar(60) not null,
+    StartDate datetime    not null,
+    Status    bit
 );
-CREATE TABLE Student
+create table Student
 (
-    StudentId   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    StudentName VARCHAR(30) NOT NULL,
-    Address     VARCHAR(50),
-    Phone       VARCHAR(20),
-    Status      BIT,
-    ClassId     INT         NOT NULL,
-    FOREIGN KEY (ClassId) REFERENCES Class (ClassID)
+    StudentId   int         not null auto_increment primary key,
+    StudentName varchar(30) not null,
+    Address     varchar(50),
+    Phone       varchar(20),
+    Status      bit,
+    ClassId     int         not null,
+    foreign key (ClassId) references Class (ClassID)
 );
-CREATE TABLE Subject
+create table Subject
 (
-    SubId   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    SubName VARCHAR(30) NOT NULL,
-    Credit  TINYINT     NOT NULL DEFAULT 1 CHECK ( Credit >= 1 ),
-    Status  BIT                  DEFAULT 1
-);
-
-CREATE TABLE Mark
-(
-    MarkId    INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    SubId     INT NOT NULL,
-    StudentId INT NOT NULL,
-    Mark      FLOAT   DEFAULT 0 CHECK ( Mark BETWEEN 0 AND 100),
-    ExamTimes TINYINT DEFAULT 1,
-    UNIQUE (SubId, StudentId),
-    FOREIGN KEY (SubId) REFERENCES Subject (SubId),
-    FOREIGN KEY (StudentId) REFERENCES Student (StudentId)
+    SubId   int         not null auto_increment primary key,
+    SubName varchar(30) not null,
+    Credit  tinyint     not null default 1 check ( Credit >= 1 ),
+    Status  bit                  default 1
 );
 
-INSERT INTO Class
-VALUES (1, 'A1', '2008-12-20', 1);
-INSERT INTO Class
-VALUES (2, 'A2', '2008-12-22', 1);
-INSERT INTO Class
-VALUES (3, 'B3', current_date, 0);
+create table Mark
+(
+    MarkId    int not null auto_increment primary key,
+    SubId     int not null,
+    StudentId int not null,
+    Mark      float   default 0 check ( Mark between 0 and 100),
+    ExamTimes tinyint default 1,
+    unique (SubId, StudentId),
+    foreign key (SubId) references Subject (SubId),
+    foreign key (StudentId) references Student (StudentId)
+);
 
-INSERT INTO Student (StudentName, Address, Phone, Status, ClassId)
-VALUES ('Hung', 'Ha Noi', '0912113113', 1, 1);
-INSERT INTO Student (StudentName, Address, Status, ClassId)
-VALUES ('Hoa', 'Hai phong', 1, 1);
-INSERT INTO Student (StudentName, Address, Phone, Status, ClassId)
-VALUES ('Manh', 'HCM', '0123123123', 0, 2);
+insert into Class
+values (1, 'A1', '2008-12-20', 1);
+insert into Class
+values (2, 'A2', '2008-12-22', 1);
+insert into Class
+values (3, 'B3', current_date, 0);
 
-INSERT INTO Subject
-VALUES (1, 'CF', 5, 1),
+insert into Student (StudentName, Address, Phone, Status, ClassId)
+values ('Hung', 'Ha Noi', '0912113113', 1, 1);
+insert into Student (StudentName, Address, Status, ClassId)
+values ('Hoa', 'Hai phong', 1, 1);
+insert into Student (StudentName, Address, Phone, Status, ClassId)
+values ('Manh', 'HCM', '0123123123', 0, 2);
+
+insert into Subject
+values (1, 'CF', 5, 1),
        (2, 'C', 6, 1),
        (3, 'HDJ', 5, 1),
        (4, 'RDBMS', 10, 1);
        
-INSERT INTO Mark (SubId, StudentId, Mark, ExamTimes)
-VALUES (1, 1, 8, 1),
+insert into Mark (SubId, StudentId, Mark, ExamTimes)
+values (1, 1, 8, 1),
        (1, 2, 10, 2),
        (2, 1, 12, 1);    
        
-       
+   
+--  Hiển thị tất cả các sinh viên có tên bắt đầu bảng ký tự ‘h’
+-- Hiển thị các thông tin lớp học có thời gian bắt đầu vào tháng 12.
+-- Hiển thị tất cả các thông tin môn học có credit trong khoảng từ 3-5.
+-- Thay đổi mã lớp(ClassID) của sinh viên có tên ‘Hung’ là 2.
+-- Hiển thị các thông tin: StudentName, SubName, Mark. Dữ liệu sắp xếp theo điểm thi (mark) giảm dần. nếu trùng sắp theo tên tăng dần.
+
 select StudentName from Student where StudentName regexp '[H]';
-select * from Class where month(StartDate) = 12;
-select * from `subject` where Credit >= 3 and Credit <=5;
-SET SQL_SAFE_UPDATES = 0;
+
+select * from Class
+where month(StartDate) = 12;
+
+select * from `subject` 
+where Credit >= 3 and Credit <=5;
+
+set SQL_SAFE_UPDATES = 0;
 update Student set ClassID = 2 where StudentName = 'Hung';
-SELECT Student.StudentName, `Subject`.SubName, Mark.Mark
-FROM Student
-INNER JOIN Mark ON Student.StudentID = Mark.StudentID
-INNER JOIN `Subject` ON Subject.SubID = Mark.SubID ORDER BY Mark DESC, StudentName;
+
+select Student.StudentName, `Subject`.SubName, Mark.Mark
+from Student
+inner join Mark on Student.StudentID = Mark.StudentID
+inner join `Subject` on Subject.SubID = Mark.SubID order by Mark desc, StudentName;
