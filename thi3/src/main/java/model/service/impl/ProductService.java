@@ -17,6 +17,7 @@ public class ProductService implements IProductService {
 
     @Override
     public List<Category> getListCategory() {
+
         return productRepository.getListCategory();
     }
 

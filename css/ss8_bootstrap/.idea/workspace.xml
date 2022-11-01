@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="277bef60-a2c5-4eeb-831a-564bde06c686" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/build_landing_page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_landing_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creat_gallery/creat_gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creat_gallery/img_fjords.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ss8_bootstrap" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,11 +35,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667180610657</updated>
-      <workItem from="1667180612031" duration="3554000" />
+      <workItem from="1667180612031" duration="3604000" />
+      <workItem from="1667204970593" duration="83000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1667205057650">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1667205057650" />
   </component>
 </project>
