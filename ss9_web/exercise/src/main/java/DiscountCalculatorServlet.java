@@ -26,6 +26,7 @@ public class DiscountCalculatorServlet extends HttpServlet {
             request.setAttribute("discountAmount", discountAmount);
             request.setAttribute("discountPrice", discountPrice);
             request.getRequestDispatcher("/result.jsp").forward(request,response);
+//            response.sendRedirect("/result.jsp");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

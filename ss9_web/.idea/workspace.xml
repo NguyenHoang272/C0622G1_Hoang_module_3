@@ -21,7 +21,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/practise_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/exercise" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -34,6 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664158463923</updated>
       <workItem from="1664158465108" duration="47000" />
+      <workItem from="1667361741327" duration="16000" />
     </task>
     <servers />
   </component>
@@ -41,9 +42,9 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1664158512019">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1667361757211">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1664158512019" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1667361757211" />
   </component>
 </project>

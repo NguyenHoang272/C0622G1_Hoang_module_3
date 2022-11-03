@@ -23,11 +23,13 @@
 
 <div class="topnav">
     <a href="#">Link</a>
+
     <a href="/product">Product</a>
-    <button style="margin-top: 8px" type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#addNewModal">
+
+    <button style="margin-top: 8px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addNewModal">
         Add new product
     </button>
+
     <div style="float: right; margin-top:6px; margin-right: 10px">
         <form style="flex: 1;" action="/product?action=search" method="post"
               class="d-flex justify-content-end m-0 p-0 align-items-center">

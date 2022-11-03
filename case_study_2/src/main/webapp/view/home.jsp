@@ -112,10 +112,7 @@
         <img src="https://exclusivesmedia.webjet.com.au/uploads/2015/05/Furama6.jpg">
     </div>
 </div>
-<%--<footer>--%>
-<%--    <p>Nguyễn Mậu Hoàng</p>--%>
-<%--</footer>--%>
-<!-- Footer -->
+
 <footer class="text-center text-lg-start bg-light text-muted">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
