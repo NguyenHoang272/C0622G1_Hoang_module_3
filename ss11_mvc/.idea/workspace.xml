@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b354d6b0-41b9-49a7-aa01-b003aedbe714" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/.idea/ss11_mvp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.idea/artifacts/exercise_1_main_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/build/classes/java/main/controller/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/build/classes/java/main/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/build/classes/java/main/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/build/classes/java/main/service/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/build/libs/exercise_1-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/WEB-INF/classes/controller/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/WEB-INF/classes/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/WEB-INF/classes/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/WEB-INF/classes/service/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/erorr-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/product/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/product/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/product/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/out/artifacts/exercise_1_main_war_exploded/product/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/java/controller/ProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/java/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/java/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/java/service/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/webapp/erorr-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/webapp/product/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/webapp/product/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/webapp/product/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/webapp/product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/exercise/src/main/webapp/product/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.idea/artifacts/product_management_main_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/build/classes/java/main/com/codegym/controller/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/build/classes/java/main/com/codegym/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/build/classes/java/main/com/codegym/repository/IProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/build/classes/java/main/com/codegym/repository/impl/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/build/classes/java/main/com/codegym/service/IProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/build/classes/java/main/com/codegym/service/impl/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/build/libs/product_management-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/WEB-INF/classes/com/codegym/controller/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/WEB-INF/classes/com/codegym/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/WEB-INF/classes/com/codegym/service/IProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/WEB-INF/classes/com/codegym/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/error-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/product/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/product/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/product/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/product/find.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/out/artifacts/product_management_main_war_exploded/product/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/java/com/codegym/controller/ProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/java/com/codegym/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/java/com/codegym/repository/IProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/java/com/codegym/repository/impl/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/java/com/codegym/service/IProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/java/com/codegym/service/impl/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/bootstrap520/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.bootstrap4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.bootstrap4.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.bootstrap5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.bootstrap5.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.bulma.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.bulma.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.dataTables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.dataTables.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.foundation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.foundation.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.jqueryui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.jqueryui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.semanticui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/dataTables.semanticui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/jquery.dataTables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/css/jquery.dataTables.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/images/sort_asc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/images/sort_asc_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/images/sort_both.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/images/sort_desc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/images/sort_desc_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.bootstrap4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.bootstrap4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.bootstrap5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.bootstrap5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.bulma.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.bulma.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.foundation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.jqueryui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.jqueryui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.semanticui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/dataTables.semanticui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/datatables/js/jquery.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/error-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/jquery/jquery-3.5.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/product/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/product/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/product/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/product/find.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/ss11_mvc/product_management(list)/src/main/webapp/product/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_jstl/exercise/exercise_2/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss10_jstl/exercise/exercise_2/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2FVwG4t6CYOPrqzbMTqD3jKKrmM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/product_management(list)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b354d6b0-41b9-49a7-aa01-b003aedbe714" name="Default Changelist" comment="" />
+      <created>1664590459307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664590459307</updated>
+      <workItem from="1664590460853" duration="21000" />
+      <workItem from="1667533085194" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1667533091049">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1667533091049" />
+  </component>
+</project>
