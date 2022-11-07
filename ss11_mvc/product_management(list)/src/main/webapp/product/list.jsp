@@ -23,9 +23,9 @@
 <p>
     <a href="/products?action=create">Thêm mới sản phẩm</a>
 
-<form action="/product" class="text-center">
+<form action="/products?action=nameSearch" class="text-center">
     <input type="text" name="nameSearch" placeholder="Nhập tên sản phẩm">
-    <button type="submit" name="action" value="findName" class="btn btn-secondary btn-sm">Tìm kiếm</button>
+    <button type="submit" name="action" value="nameSearch" class="btn btn-secondary btn-sm">Tìm kiếm</button>
 </form>
 </p>
 <table id="product_table" class="table table-striped table-bordered" style="width: 100%">

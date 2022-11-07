@@ -36,9 +36,9 @@ public class ProductServlet extends HttpServlet {
             case "delete":
                 deleteProduct(request, response);
                 break;
-//            case "find":
-//                searchByName(request, response);
-//                break;
+            case "nameSearch":
+                searchByName(request, response);
+                break;
             default:
                 searchByName(request, response);
                 break;
@@ -66,7 +66,7 @@ public class ProductServlet extends HttpServlet {
             case "view":
                 viewCustomer(request, response);
                 break;
-            case "find":
+            case "nameSearch":
                 searchByName(request, response);
                 break;
             default:
@@ -76,7 +76,7 @@ public class ProductServlet extends HttpServlet {
     }
 
     private void searchByName(HttpServletRequest request, HttpServletResponse response) {
-        String nameSearch = request.getParameter("findName");
+        String nameSearch = request.getParameter("nameSearch");
         List<Product> productList = productService.findByName(nameSearch == null ? "" :nameSearch );
         request.setAttribute("productList", productList);
         RequestDispatcher dispatcher = request.getRequestDispatcher("product/list.jsp");
