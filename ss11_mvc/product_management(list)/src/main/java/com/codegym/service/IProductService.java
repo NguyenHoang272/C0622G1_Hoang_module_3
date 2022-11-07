@@ -15,7 +15,7 @@ public interface IProductService {
 
     void remove(int id);
 
-    List<Product> findByName(String name);
+    public List<Product> findByName(String name);
 
     List<Product> findByProducer(String producer);
 

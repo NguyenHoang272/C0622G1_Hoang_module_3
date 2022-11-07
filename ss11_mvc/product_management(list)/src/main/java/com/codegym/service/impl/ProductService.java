@@ -8,7 +8,7 @@ import com.codegym.service.IProductService;
 import java.util.List;
 
 public class ProductService implements IProductService {
-    IProductRepository iProductRepository = new ProductRepository();
+    private IProductRepository iProductRepository = new ProductRepository();
 
     @Override
     public List<Product> findAll() {

@@ -11,15 +11,22 @@
 <html>
 <head>
     <title>Danh sách sản phẩm</title>
-    <link rel="stylesheet" href="bootstrap520/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="datatables/css/dataTables.bootstrap5.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 
 </head>
 <body>
 <h1>Danh sách sản phẩm</h1>
 <p>
     <a href="/products?action=create">Thêm mới sản phẩm</a>
-    <a href="/products?action=find">Tìm kiếm sản phẩm</a>
+
+<form action="/product" class="text-center">
+    <input type="text" name="nameSearch" placeholder="Nhập tên sản phẩm">
+    <button type="submit" name="action" value="findName" class="btn btn-secondary btn-sm">Tìm kiếm</button>
+</form>
 </p>
 <table id="product_table" class="table table-striped table-bordered" style="width: 100%">
     <thead>
@@ -35,7 +42,7 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${products}" var="product" varStatus="status">
+    <c:forEach items="${productList}" var="product" varStatus="status">
         <tr>
             <td>${status.count}</td>
             <td>${product.getId()}</td>

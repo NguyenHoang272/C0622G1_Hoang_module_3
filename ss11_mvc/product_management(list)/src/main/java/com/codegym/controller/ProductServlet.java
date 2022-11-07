@@ -28,19 +28,19 @@ public class ProductServlet extends HttpServlet {
         }
         switch (action) {
             case "create":
-                createCustomer(request, response);
+                createProduct(request, response);
                 break;
             case "edit":
-                updateCustomer(request, response);
+                updateProduct(request, response);
                 break;
             case "delete":
-                deleteCustomer(request, response);
+                deleteProduct(request, response);
                 break;
-            case "find":
-                findCustomer(request, response);
-                break;
+//            case "find":
+//                searchByName(request, response);
+//                break;
             default:
-                listCustomers(request, response);
+                searchByName(request, response);
                 break;
         }
     }
@@ -67,27 +67,39 @@ public class ProductServlet extends HttpServlet {
                 viewCustomer(request, response);
                 break;
             case "find":
-                showFindForm(request, response);
+                searchByName(request, response);
                 break;
             default:
-                listCustomers(request, response);
+                searchByName(request, response);
                 break;
         }
     }
 
-    private void listCustomers(HttpServletRequest request, HttpServletResponse response) {
-        List<Product> products = this.productService.findAll();
-
-        request.setAttribute("products", products);
+    private void searchByName(HttpServletRequest request, HttpServletResponse response) {
+        String nameSearch = request.getParameter("findName");
+        List<Product> productList = productService.findByName(nameSearch == null ? "" :nameSearch );
+        request.setAttribute("productList", productList);
         RequestDispatcher dispatcher = request.getRequestDispatcher("product/list.jsp");
         try {
             dispatcher.forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
     }
+
+//    private void listProduct(HttpServletRequest request, HttpServletResponse response) {
+//        List<Product> products = this.productService.findAll();
+//
+//        request.setAttribute("products", products);
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("product/list.jsp");
+//        try {
+//            dispatcher.forward(request, response);
+//        } catch (ServletException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     private void showCreateForm(HttpServletRequest request, HttpServletResponse response) {
         RequestDispatcher dispatcher = request.getRequestDispatcher("product/create.jsp");
@@ -100,7 +112,7 @@ public class ProductServlet extends HttpServlet {
         }
     }
 
-    private void createCustomer(HttpServletRequest request, HttpServletResponse response) {
+    private void createProduct(HttpServletRequest request, HttpServletResponse response) {
         List<Product> products = this.productService.findAll();
         int maxId = products.get(0).getId();
         for (Product product : products
@@ -145,7 +157,7 @@ public class ProductServlet extends HttpServlet {
         }
     }
 
-    private void updateCustomer(HttpServletRequest request, HttpServletResponse response) {
+    private void updateProduct(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
         double price = Double.parseDouble(request.getParameter("price"));
@@ -195,7 +207,7 @@ public class ProductServlet extends HttpServlet {
         }
     }
 
-    private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) {
+    private void deleteProduct(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         Product product = this.productService.findById(id);
         RequestDispatcher dispatcher;
@@ -245,7 +257,7 @@ public class ProductServlet extends HttpServlet {
 
     }
 
-    private void findCustomer(HttpServletRequest request, HttpServletResponse response) {
+    private void findProduct(HttpServletRequest request, HttpServletResponse response) {
         List<Product> products = new ArrayList<>();
         String option = request.getParameter("option");
         switch (option) {
@@ -256,10 +268,10 @@ public class ProductServlet extends HttpServlet {
                     products.add(product);
                 }
                 break;
-            case "name":
-                String name = request.getParameter("name");
-                products = this.productService.findByName(name);
-                break;
+//            case "name":
+//                String name = request.getParameter("name");
+//                products = this.productService.findByName(name);
+//                break;
             case "Price":
                 double minPrice = Double.parseDouble(request.getParameter("minPrice"));
                 double maxPrice = Double.parseDouble(request.getParameter("maxPrice"));
