@@ -12,3 +12,6 @@ primary key(id)
 
 insert into users(name, email, country) values('Minh','minh@codegym.vn','Viet Nam');
 insert into users(name, email, country) values('Kante','kante@che.uk','Kenia');
+insert into users(name, email, country) values('Hoang','minh@codegym.vn','Viet Nam');
+insert into users(name, email, country) values('Vinh','kante@che.uk','Kenia');
+insert into users(name, email, country) values('Danh','kante@che.uk','Kenia');

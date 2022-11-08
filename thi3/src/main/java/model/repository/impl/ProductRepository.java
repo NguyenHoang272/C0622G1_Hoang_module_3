@@ -27,7 +27,6 @@ public class ProductRepository implements IProductRepository {
     public List<Product> getListProduct() {
         List<Product> listProduct = new ArrayList<>();
         Connection connection = BaseRepository.getConnectDB();
-
         try {
             PreparedStatement ps = connection.prepareStatement(SELECT_ALL_PRODUCTS);
 

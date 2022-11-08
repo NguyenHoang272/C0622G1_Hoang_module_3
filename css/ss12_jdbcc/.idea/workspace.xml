@@ -2,121 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b03194f-c59a-4ca1-b84e-cc2e4fb3b66a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/.idea/ss12.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/6.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/build/classes/java/main/controller/UserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/build/classes/java/main/dao/IUserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/build/classes/java/main/dao/UserDAO$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/build/classes/java/main/dao/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/build/classes/java/main/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/build/classes/java/main/service/IUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/build/classes/java/main/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/build/libs/exercise_1-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/java/controller/UserServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/java/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/java/repository/IUserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/java/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/java/service/IUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/java/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/webapp/user/create.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/webapp/user/edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/webapp/user/find.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc/exercise/src/main/webapp/user/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ss12_jdbcc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build/classes/java/main/controller/UserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build/classes/java/main/model/SortByNameCoparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build/classes/java/main/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build/classes/java/main/repository/IUserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build/classes/java/main/repository/impl/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build/classes/java/main/service/IUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build/classes/java/main/service/impl/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build/libs/practise-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/sql/practise_12.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/java/controller/UserServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/java/model/SortByNameCoparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/java/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/java/repository/IUserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/java/repository/impl/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/java/service/IUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/java/service/impl/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/webapp/user/arrange.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/webapp/user/create.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/webapp/user/edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/webapp/user/find.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/webapp/user/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practise/src/main/webapp/user/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ss12_jdbc/exercise" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -220,6 +106,7 @@
       <workItem from="1667798087657" duration="211000" />
       <workItem from="1667799047679" duration="263000" />
       <workItem from="1667803432294" duration="461000" />
+      <workItem from="1667810874414" duration="38000" />
     </task>
     <servers />
   </component>
@@ -239,10 +126,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="372" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1280.680@0.0.1280.680" timestamp="1667798211152" />
-    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1667798297969">
+    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1667810911052">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1667798297969" />
+    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1667810911052" />
     <state width="845" height="163" key="GridCell.Tab.0.bottom" timestamp="1667798299783">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-<h1>User Manager</h1>
-<a href="/user?action=add">ADD new User</a>
+<h1 style="margin-left: 10px">User Manager</h1>
+<a href="/user?action=add" style="margin-left: 10px">ADD new User</a>
 
-<h3>List Of User</h3>
-<a class="btn btn-success" href="/user?action=sort">Sort By Name</a>
-<div class="search">
+<h3 style="margin-left: 10px">List Of User</h3>
+<a class="btn btn-success" href="/user?action=sort" style="margin: 10px 10px">Sort By Name</a>
+<div class="search" style="margin-left: 10px;">
     <form action="/user?action=search" method="post">
         <input type="text" placeholder="Search By Name..." name="search">
         <input type="submit" value="Search">

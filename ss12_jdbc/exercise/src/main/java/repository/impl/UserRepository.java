@@ -14,21 +14,22 @@ import java.util.List;
 
 public class UserRepository implements IUserRepository {
     private static final String INERT_USER = "INSERT INTO users (name, email, country) VALUES (?, ?, ?);";
-    private static final String DELETE_USER = "call sp_delete_user(?);";
-    private static final String SELECT_BY_ID = "SELECT * FROM users ";
+    private static final String DELETE_USER =  "delete from users where id = ?;";
+    private static final String SELECT_BY_ID = "SELECT * FROM users where id = ? ";
+    private static final String SELECT_ALL = "SELECT * FROM users ";
     private static final String SELECT_ALL_BY_NAME = "SELECT * FROM users\n" +
             "order by name;";
     private static final String SEARCH_ALL_BY_NAME = "select * from users\n" +
             "where name like ?;";
 
-    private static final String UPDATE = "call sp_update_user(?, ?, ?, ?);";
+    private static final String UPDATE = "update users set name = ?,email= ?, country =? where id = ?;";
     private static final String SP_GET_ALL = "call sp_show_all_user();";
     private static final Connection connection = new ConnectionDB().getConnection();
     @Override
     public List<User> getAll() {
         List<User> userList = new ArrayList<>();
         try{
-            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_BY_ID);
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL);
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()) {
                 int id = rs.getInt("id");
@@ -46,7 +47,9 @@ public class UserRepository implements IUserRepository {
     public User getUserById(int id) {
         try {
             PreparedStatement psUser = connection.prepareStatement(SELECT_BY_ID);
+            psUser.setInt(1, id);
             ResultSet rs = psUser.executeQuery();
+
             User user = null;
             while (rs.next()) {
                 String name = rs.getString("name");
@@ -61,6 +64,7 @@ public class UserRepository implements IUserRepository {
         return  null;
     }
 
+//    Sắp xếp
     @Override
     public List<User> getAllByName() {
         List<User> userList = new ArrayList<>();
@@ -80,6 +84,7 @@ public class UserRepository implements IUserRepository {
         return userList;
     }
 
+//    Tìm theo tên
     @Override
     public List<User> getUserByName(String search) {
 
@@ -135,11 +140,12 @@ public class UserRepository implements IUserRepository {
     @Override
     public boolean update(int userId, User user) {
         try {
-            PreparedStatement psUser = connection.prepareCall(UPDATE);
-            psUser.setInt(1, user.getId());
-            psUser.setString(2, user.getName());
-            psUser.setString(3, user.getEmail());
-            psUser.setString(4, user.getCountry());
+            PreparedStatement psUser = connection.prepareStatement(UPDATE);
+
+            psUser.setString(1, user.getName());
+            psUser.setString(2, user.getEmail());
+            psUser.setString(3, user.getCountry());
+            psUser.setInt(4, user.getId());
             psUser.executeUpdate();
             return true;
         } catch (SQLException e) {

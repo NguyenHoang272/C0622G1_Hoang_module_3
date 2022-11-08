@@ -60,9 +60,9 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach var="x" items="${productList}" varStatus="count">
+            <c:forEach var="x" items="${productList}" varStatus="stt">
                 <tr>
-                    <td>${count.getCount()}</td>
+                    <td>${stt.count}</td>
                     <td>${x.getProductName()}</td>
                     <td>${x.getPrice()}</td>
                     <td>${x.getQuantity()}</td>

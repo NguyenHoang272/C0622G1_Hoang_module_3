@@ -33,6 +33,8 @@ public class ProductServlet extends HttpServlet {
             case "edit":
                 updateProduct(request, response);
                 break;
+
+                
             case "delete":
                 deleteProduct(request, response);
                 break;
