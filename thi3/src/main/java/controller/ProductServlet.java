@@ -106,8 +106,6 @@ public class ProductServlet extends HttpServlet {
         if (!productService.deleteProduct(idDelete)) {
             mess = "Delete Failed!";
         }
-        ;
-
 
         request.setAttribute("mess", mess);
         request.setAttribute("productList", productService.getListProduct());

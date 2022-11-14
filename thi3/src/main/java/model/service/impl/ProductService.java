@@ -12,6 +12,7 @@ public class ProductService implements IProductService {
 
     @Override
     public List<Product> getListProduct() {
+
         return productRepository.getListProduct();
     }
 

@@ -59,7 +59,7 @@ public class FacilityServlet extends HttpServlet {
         facilityService.edit(newfacility);
         if (newfacility.getFacilityType() == 1) {
             try {
-                request.getRequestDispatcher("view/edit_villa.jsp").forward(request, response);
+                request.getRequestDispatcher("view/facility/edit_villa.jsp").forward(request, response);
             } catch (ServletException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -67,7 +67,7 @@ public class FacilityServlet extends HttpServlet {
             }
         } else if (newfacility.getFacilityType() == 2) {
             try {
-                request.getRequestDispatcher("view/edit_house.jsp").forward(request, response);
+                request.getRequestDispatcher("view/facility/edit_house.jsp").forward(request, response);
             } catch (ServletException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -75,7 +75,7 @@ public class FacilityServlet extends HttpServlet {
             }
         } else if (newfacility.getFacilityType() == 3) {
             try {
-                request.getRequestDispatcher("view/edit_room.jsp").forward(request, response);
+                request.getRequestDispatcher("view/facility/edit_room.jsp").forward(request, response);
             } catch (ServletException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -100,7 +100,7 @@ public class FacilityServlet extends HttpServlet {
         Facility newfacility = new Facility(name, area, price, maxPeople, rentType, facilityTypeId, standardRoom, descriptionOtherConvenience, poolArea, floors, facilityFree);
         facilityService.addFacility(newfacility);
         try {
-            request.getRequestDispatcher("view/facilityroom.jsp").forward(request, response);
+            request.getRequestDispatcher("view/facility/facilityroom.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -123,7 +123,7 @@ public class FacilityServlet extends HttpServlet {
         Facility newfacility = new Facility(name, area, price, maxPeople, rentType, facilityTypeId, standardRoom, descriptionOtherConvenience, poolArea, floors, facilityFree);
         facilityService.addFacility(newfacility);
         try {
-            request.getRequestDispatcher("view/facilityhouse.jsp").forward(request, response);
+            request.getRequestDispatcher("view/facility/facilityhouse.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -146,7 +146,7 @@ public class FacilityServlet extends HttpServlet {
         Facility newfacility = new Facility(name, area, price, maxPeople, rentType, facilityTypeId, standardRoom, descriptionOtherConvenience, poolArea, floors, facilityFree);
         facilityService.addFacility(newfacility);
         try {
-            request.getRequestDispatcher("view/facilityvilla.jsp").forward(request, response);
+            request.getRequestDispatcher("view/facility/facilityvilla.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -192,7 +192,7 @@ public class FacilityServlet extends HttpServlet {
         request.setAttribute("facility", facility);
         if (facility.getFacilityType() == 1) {
             try {
-                request.getRequestDispatcher("view/edit_villa.jsp").forward(request, response);
+                request.getRequestDispatcher("view/facility/edit_villa.jsp").forward(request, response);
             } catch (ServletException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -200,7 +200,7 @@ public class FacilityServlet extends HttpServlet {
             }
         } else if (facility.getFacilityType() == 2) {
             try {
-                request.getRequestDispatcher("view/edit_house.jsp").forward(request, response);
+                request.getRequestDispatcher("view/facility/edit_house.jsp").forward(request, response);
             } catch (ServletException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -208,7 +208,7 @@ public class FacilityServlet extends HttpServlet {
             }
         } else if (facility.getFacilityType() == 3) {
             try {
-                request.getRequestDispatcher("view/edit_room.jsp").forward(request, response);
+                request.getRequestDispatcher("view/facility/edit_room.jsp").forward(request, response);
             } catch (ServletException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -220,7 +220,7 @@ public class FacilityServlet extends HttpServlet {
     private void showFormRoom(HttpServletRequest request, HttpServletResponse response) {
 
         try {
-            request.getRequestDispatcher("view/facilityroom.jsp").forward(request, response);
+            request.getRequestDispatcher("view/facility/facilityroom.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -230,7 +230,7 @@ public class FacilityServlet extends HttpServlet {
 
     private void showFormHouse(HttpServletRequest request, HttpServletResponse response) {
         try {
-            request.getRequestDispatcher("view/facilityhouse.jsp").forward(request, response);
+            request.getRequestDispatcher("view/facility/facilityhouse.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -240,7 +240,7 @@ public class FacilityServlet extends HttpServlet {
 
     private void showFormVilla(HttpServletRequest request, HttpServletResponse response) {
         try {
-            request.getRequestDispatcher("view/facilityvilla.jsp").forward(request, response);
+            request.getRequestDispatcher("view/facility/facilityvilla.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -256,7 +256,7 @@ public class FacilityServlet extends HttpServlet {
             List<Facility> facilityList = facilityService.findByName(search);
             request.setAttribute("facilityList", facilityList);
             try {
-                request.getRequestDispatcher("view/facility.jsp").forward(request, response);
+                request.getRequestDispatcher("view/facility/facility.jsp").forward(request, response);
             } catch (ServletException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -266,7 +266,7 @@ public class FacilityServlet extends HttpServlet {
             List<Facility> facilityList = facilityService.find(search,type);
             request.setAttribute("facilityList", facilityList);
             try {
-                request.getRequestDispatcher("view/facility.jsp").forward(request, response);
+                request.getRequestDispatcher("view/facility/facility.jsp").forward(request, response);
             } catch (ServletException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -286,7 +286,7 @@ public class FacilityServlet extends HttpServlet {
         List<Facility> facilityList = facilityService.getListService();
         request.setAttribute("facilityList", facilityList);
         try {
-            request.getRequestDispatcher("view/facility.jsp").forward(request, response);
+            request.getRequestDispatcher("view/facility/facility.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {

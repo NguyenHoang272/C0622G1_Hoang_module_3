@@ -209,8 +209,24 @@ WHERE ma_loai_khach = '2'
 
 -- task 18
 -- 	Xóa những khách hàng có hợp đồng trước năm 2021 (chú ý ràng buộc giữa các bảng).
-SET FOREIGN_KEY_CHECKS = 0;
-SET SQL_SAFE_UPDATES = 0;
+set FOREIGN_KEY_CHECKS = 0;
+set SQL_SAFE_UPDATES = 0;
+
+delete 
+from khach_hang
+where khach_hang.ma_khach in(
+select *from( 
+select kh.ma_khach_hang
+        from khach_hang kh
+        join hop_dong hd on kh.ma_khach_hang = hd.ma_khach_hang
+        where year(hd.ngay_lam_hop_dong) <2021));
+
+
+
+
+
+
+
 DELETE
 
 FROM khach_hang

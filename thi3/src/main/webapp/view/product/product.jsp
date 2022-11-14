@@ -44,6 +44,7 @@
 </div>
 
 <div class="row">
+
     <div class="leftcolumn" style="margin-top: 10px">
         <table id="tableProduct" class="table table-striped table-bordered" style="width:100%">
             <thead>
@@ -71,7 +72,7 @@
                     <c:forEach var="y" items="${categoryList}">
                         <c:if test="${x.getCategory_id() == y.getId()}">
                             <td>${y.getCategoryName()}</td>
-                        </c:if>
+                         </c:if>
                     </c:forEach>
                     <td>
                         <button
@@ -97,6 +98,8 @@
         </table>
         <p>${mess}</p>
     </div>
+
+
     <div class="rightcolumn">
         <div class="card">
             <h2>About Me</h2>

@@ -51,7 +51,7 @@ public class CustomerServlet extends HttpServlet {
         Customer customer = new Customer(id,customerType, name, dateOfBirth, gender, idCard, phone, email, address);
         customerService.updateCustomer(customer);
         try {
-            request.getRequestDispatcher("view/edit_customer.jsp").forward(request, response);
+            request.getRequestDispatcher("view/customer/edit_customer.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -71,7 +71,7 @@ public class CustomerServlet extends HttpServlet {
         Customer customer = new Customer(customerType, name, dateOfBirth, gender, idCard, phone, email, address);
         customerService.addCustomer(customer);
         try {
-            request.getRequestDispatcher("view/add_customer.jsp").forward(request, response);
+            request.getRequestDispatcher("view/customer/add_customer.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -110,7 +110,7 @@ public class CustomerServlet extends HttpServlet {
         Customer customer = customerService.selectCustomer(id);
         request.setAttribute("customer", customer);
         try {
-            request.getRequestDispatcher("view/edit_customer.jsp").forward(request, response);
+            request.getRequestDispatcher("view/customer/edit_customer.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -123,7 +123,7 @@ public class CustomerServlet extends HttpServlet {
         List<Customer> customerList = customerService.findByCustomerByName(name);
         request.setAttribute("listCustomer", customerList);
         try {
-            request.getRequestDispatcher("view/customer.jsp").forward(request, response);
+            request.getRequestDispatcher("view/customer/customer.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -133,7 +133,7 @@ public class CustomerServlet extends HttpServlet {
 
     private void showNewForm(HttpServletRequest request, HttpServletResponse response) {
         try {
-            request.getRequestDispatcher("view/add_customer.jsp").forward(request, response);
+            request.getRequestDispatcher("view/customer/add_customer.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -151,7 +151,7 @@ public class CustomerServlet extends HttpServlet {
         List<Customer> customers = customerService.getListCustomer();
         request.setAttribute("listCustomer", customers);
         try {
-            request.getRequestDispatcher("view/customer.jsp").forward(request, response);
+            request.getRequestDispatcher("view/customer/customer.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {

@@ -5,7 +5,7 @@ import model.model.Product;
 
 import java.util.List;
 
-public interface IProductService {
+public interface    IProductService {
 
     List<Product> getListProduct();
 

@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoài Phương có iu anh không?</title>
+    <style>
+        .content {
+            height: 400px;
+            width: 100%;
+            background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-romantic-love-cloud-side-advertising-background-image_282106.jpg);
+            background-size: cover;
+            height: 100%;
+
+        }
+
+        .love {
+            margin-left: 800px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="content">
+    <div class="love">
+        <h2 class="text">Thúi có thích eng không?</h2>
+        <button style="padding: 20px" type="button" id="yes" onclick="clickYes();">Yes</button>
+        <button type="button" id="no" class="no" onmouseover="mouseHover();" style="position: absolute; padding: 20px">No</button>
+    </div>
+</div>
+<script>
+    function mouseHover() {
+        let a = document.getElementById('no');
+        let x = Math.floor(Math.random() * 500) + 1;
+        let y = Math.floor(Math.random() * 500) + 1;
+        a.style.left = x + "px";
+        a.style.top = y + "px";
+    }
+
+    function clickYes() {
+        alert("Nhanh mà về ăn lẩu (^-^)");
+    }
+</script>
+
+
+</body>
+</html>

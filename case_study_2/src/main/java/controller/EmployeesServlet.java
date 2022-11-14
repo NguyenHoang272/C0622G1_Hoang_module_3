@@ -56,7 +56,7 @@ public class EmployeesServlet extends HttpServlet {
         Employee newEmployee = new Employee(id,name, dateOfBirth, idCard, salary, phone, email, address, positionId, educationId, divisionId, username);
         employeeService.updateEmployee(newEmployee);
         try {
-            request.getRequestDispatcher("view/edit_employees.jsp").forward(request,response);
+            request.getRequestDispatcher("view/employees/edit_employees.jsp").forward(request,response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -80,7 +80,7 @@ public class EmployeesServlet extends HttpServlet {
         Employee newEmployee = new Employee(name, dateOfBirth, idCard, salary, phone, email, address, positionId, educationId, divisionId, username);
         employeeService.addEmployee(newEmployee);
         try {
-            request.getRequestDispatcher("view/add_employees.jsp").forward(request, response);
+            request.getRequestDispatcher("view/employees/add_employees.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -119,7 +119,7 @@ public class EmployeesServlet extends HttpServlet {
         List<Employee> employeeList = employeeService.selectEmployeeByName(search);
         request.setAttribute("listEmployees",employeeList);
         try {
-            request.getRequestDispatcher("view/employees.jsp").forward(request,response);
+            request.getRequestDispatcher("view/employees/employees.jsp").forward(request,response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -129,7 +129,7 @@ public class EmployeesServlet extends HttpServlet {
 
     private void showNewForm(HttpServletRequest request, HttpServletResponse response) {
         try {
-            request.getRequestDispatcher("view/add_employees.jsp").forward(request, response);
+            request.getRequestDispatcher("view/employees/add_employees.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -142,7 +142,7 @@ public class EmployeesServlet extends HttpServlet {
         Employee existEmployee = employeeService.selectEmployee(id);
         try {
             request.setAttribute("employee",existEmployee);
-            request.getRequestDispatcher("view/edit_employees.jsp").forward(request,response);
+            request.getRequestDispatcher("view/employees/edit_employees.jsp").forward(request,response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -156,7 +156,7 @@ public class EmployeesServlet extends HttpServlet {
        List<Employee> list = employeeService.getListEmployees();
        request.setAttribute("listEmployees",list);
         try {
-            request.getRequestDispatcher("view/employees.jsp").forward(request,response);
+            request.getRequestDispatcher("view/employees/employees.jsp").forward(request,response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -168,7 +168,7 @@ public class EmployeesServlet extends HttpServlet {
         List<Employee> list = employeeService.getListEmployees();
         request.setAttribute("listEmployees", list);
         try {
-            request.getRequestDispatcher("view/employees.jsp").forward(request, response);
+            request.getRequestDispatcher("view/employees/employees.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
